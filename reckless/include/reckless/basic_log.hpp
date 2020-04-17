@@ -44,7 +44,7 @@
 namespace reckless {
 namespace detail {
 #if defined(_WIN32)
-    extern "C" unsigned long __stdcall GetCurrentThreadId();
+    extern "C" __declspec(dllimport) unsigned long __stdcall GetCurrentThreadId();
 #endif
 
     enum class frame_status : char {

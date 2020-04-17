@@ -69,11 +69,11 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{60BA1990-CECE-4F52-A3D0-7BBC727B0BE4}</ProjectGuid>
     <RootNamespace>mandelbrot</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Label="Configuration">
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="$(Configuration.Contains(`Release`))">
     <WholeProgramOptimization>true</WholeProgramOptimization>

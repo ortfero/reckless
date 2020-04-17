@@ -124,8 +124,8 @@ namespace reckless {
 namespace detail {
 
 extern "C" {
-    unsigned long __stdcall WaitForSingleObject(void* hHandle, unsigned long dwMilliseconds);
-    int __stdcall SetEvent(void* hEvent);
+    __declspec(dllimport) unsigned long __stdcall WaitForSingleObject(void* hHandle, unsigned long dwMilliseconds);
+    __declspec(dllimport) int __stdcall SetEvent(void* hEvent);
 }
 
 class spsc_event {
